@@ -1,0 +1,109 @@
+.container {
+  max-width: 80%;
+  margin-inline: auto;
+  margin-top: 2rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    max-width: 60%;
+  }
+}
+
+.inputContainer {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.inputContainer input {
+  width: calc(100% - 100px);
+  height: 50px;
+  padding: 1rem;
+  border: 0;
+  outline: 0;
+  border-radius: 30px 0 0 30px;
+  border-right: 0;
+  font-size: 1.5rem;
+  box-shadow: 0 0 3px black;
+}
+
+.inputContainer button {
+  width: 100px;
+  height: 50px;
+  font-size: 1.5rem;
+  border-radius: 0 30px 30px 0;
+  border: 0;
+  outline: 0;
+  border-left: 0;
+  box-shadow: 0 0 5px black;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.listTodos {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.listTodos .todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px rgb(148, 154, 202);
+  border-radius: 10px;
+}
+
+.listTodos .todo .task {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  flex: 1;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.listTodos .todo .actionBtns {
+  display: flex;
+  gap: 0.7rem;
+  margin-inline: 1rem;
+}
+
+.listTodos .todo .actionBtns button {
+  padding: 0.7rem 1.5rem;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+}
+
+.listTodos .todo .actionBtns button.edit {
+  background-color: green;
+  color: white;
+}
+
+.listTodos .todo .actionBtns button.delete {
+  background-color: red;
+  color: white;
+}
+
+input[type="checkbox"] {
+  height: 18px;
+  width: 18px;
+  accent-color: green;
+}
+
+.editInputBox {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 18px;
+}
